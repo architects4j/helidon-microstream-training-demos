@@ -10,7 +10,7 @@
         <relativePath></relativePath>
     </parent>
     <groupId>com.otaviojava.workshop.microstream.helidon</groupId>
-    <artifactId>restaurant</artifactId>
+    <artifactId>restaurant-open-api</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
         <mpVersion>3.3</mpVersion>
