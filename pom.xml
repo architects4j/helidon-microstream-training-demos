@@ -12,6 +12,7 @@
     <module>restaurant</module>
     <module>restaurant-open-api</module>
     <module>nosql</module>
+    <module>jpa</module>
     <module>config</module>
   </modules>
 </project>
