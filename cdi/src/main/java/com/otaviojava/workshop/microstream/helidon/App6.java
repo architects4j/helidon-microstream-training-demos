@@ -1,8 +1,7 @@
-package my.compary.cdi.demo;
+package com.otaviojava.workshop.microstream.helidon;
 
-import my.compary.cdi.demo.auditaded.FastSupplier;
-import my.compary.cdi.demo.auditaded.SlowSupplier;
-import my.compary.cdi.demo.decorator.Worker;
+import com.otaviojava.workshop.microstream.helidon.auditaded.FastSupplier;
+import com.otaviojava.workshop.microstream.helidon.auditaded.SlowSupplier;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;

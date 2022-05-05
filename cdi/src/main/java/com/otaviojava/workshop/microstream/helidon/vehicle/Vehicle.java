@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.vehicle;
+package com.otaviojava.workshop.microstream.helidon.vehicle;
 
 public interface Vehicle {
 

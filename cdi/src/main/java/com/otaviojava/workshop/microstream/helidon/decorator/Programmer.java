@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.decorator;
+package com.otaviojava.workshop.microstream.helidon.decorator;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.logging.Logger;

@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.decorator;
+package com.otaviojava.workshop.microstream.helidon.decorator;
 
 public interface Worker {
 

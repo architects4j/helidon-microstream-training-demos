@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.news;
+package com.otaviojava.workshop.microstream.helidon.news;
 
 import javax.inject.Qualifier;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.producer;
+package com.otaviojava.workshop.microstream.helidon.producer;
 
 import javax.inject.Inject;
 import java.math.BigDecimal;

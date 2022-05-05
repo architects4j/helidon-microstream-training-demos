@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.music;
+package com.otaviojava.workshop.microstream.helidon.music;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;

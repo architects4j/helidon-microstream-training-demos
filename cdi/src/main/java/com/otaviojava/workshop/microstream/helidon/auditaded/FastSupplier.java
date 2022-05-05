@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.auditaded;
+package com.otaviojava.workshop.microstream.helidon.auditaded;
 
 import java.util.function.Supplier;
 

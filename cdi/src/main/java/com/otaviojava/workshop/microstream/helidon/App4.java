@@ -1,7 +1,7 @@
-package my.compary.cdi.demo;
+package com.otaviojava.workshop.microstream.helidon;
 
-import my.compary.cdi.demo.news.Journalist;
-import my.compary.cdi.demo.news.News;
+import com.otaviojava.workshop.microstream.helidon.news.Journalist;
+import com.otaviojava.workshop.microstream.helidon.news.News;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;

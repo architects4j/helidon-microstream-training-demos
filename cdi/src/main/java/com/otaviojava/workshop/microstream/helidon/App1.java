@@ -1,7 +1,7 @@
-package my.compary.cdi.demo;
+package com.otaviojava.workshop.microstream.helidon;
 
-import my.compary.cdi.demo.vehicle.Car;
-import my.compary.cdi.demo.vehicle.Vehicle;
+import com.otaviojava.workshop.microstream.helidon.vehicle.Car;
+import com.otaviojava.workshop.microstream.helidon.vehicle.Vehicle;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;

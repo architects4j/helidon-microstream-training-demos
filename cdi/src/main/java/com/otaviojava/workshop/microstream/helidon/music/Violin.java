@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.music;
+package com.otaviojava.workshop.microstream.helidon.music;
 
 @MusicalInstrument(InstrumentType.STRING)
 class Violin implements Instrument {

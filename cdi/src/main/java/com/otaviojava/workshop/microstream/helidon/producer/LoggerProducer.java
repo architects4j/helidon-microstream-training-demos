@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.producer;
+package com.otaviojava.workshop.microstream.helidon.producer;
 
 
 import javax.enterprise.context.ApplicationScoped;

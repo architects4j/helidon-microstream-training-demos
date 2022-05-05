@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.injection;
+package com.otaviojava.workshop.microstream.helidon.injection;
 
 public class MyServiceSample {
 

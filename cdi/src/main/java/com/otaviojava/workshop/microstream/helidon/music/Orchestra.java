@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.music;
+package com.otaviojava.workshop.microstream.helidon.music;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Any;

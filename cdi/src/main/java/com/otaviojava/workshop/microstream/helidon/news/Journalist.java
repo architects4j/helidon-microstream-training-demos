@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.news;
+package com.otaviojava.workshop.microstream.helidon.news;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.event.Event;

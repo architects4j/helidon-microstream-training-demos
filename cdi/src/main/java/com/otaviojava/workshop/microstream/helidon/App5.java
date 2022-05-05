@@ -1,6 +1,6 @@
-package my.compary.cdi.demo;
+package com.otaviojava.workshop.microstream.helidon;
 
-import my.compary.cdi.demo.decorator.Worker;
+import com.otaviojava.workshop.microstream.helidon.decorator.Worker;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;

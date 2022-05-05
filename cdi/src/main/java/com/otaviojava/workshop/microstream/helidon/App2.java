@@ -1,6 +1,6 @@
-package my.compary.cdi.demo;
+package com.otaviojava.workshop.microstream.helidon;
 
-import my.compary.cdi.demo.music.Orchestra;
+import com.otaviojava.workshop.microstream.helidon.music.Orchestra;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;

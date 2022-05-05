@@ -1,4 +1,4 @@
-package my.compary.cdi.demo.vehicle;
+package com.otaviojava.workshop.microstream.helidon.vehicle;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.Objects;
