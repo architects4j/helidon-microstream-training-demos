@@ -23,6 +23,17 @@ http://localhost:8080/index.html
 ```
 
 
+## Using Docker
+
+![Docker](https://www.docker.com/sites/default/files/horizontal_large.png)
+
+1. Install docker: https://www.docker.com/
+1. https://hub.docker.com/_/postgres
+1. Run docker command
+1. Run MongoDB: verify MongoDB image name with the command `docker images`, it can be mongodb or mongo, and then execute this
+    * `docker run -d --name mongodb-instance -p 27017:27017 mongo`
+
+
 To execute the tests:
 
 ```shell
