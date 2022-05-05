@@ -22,6 +22,15 @@ To launch the test page, open your browser at the following URL
 http://localhost:8080/index.html  
 ```
 
+## Using Docker
+
+
+1. Install docker: https://www.docker.com/
+1. https://hub.docker.com/_/postgres
+1. Run docker command
+1. Run PostgreSQL: verify PostgreSQL image name with the command `docker images`, it can be mongodb or mongo, and then execute this command:
+    * `docker run --name postgres-instance -p 5432:5432 -e POSTGRES_PASSWORD=password -e POSTGRES_DB=fishes -d postgres`
+
 
 To execute the tests:
 
