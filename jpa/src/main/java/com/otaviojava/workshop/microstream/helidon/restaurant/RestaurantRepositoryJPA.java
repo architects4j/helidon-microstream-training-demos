@@ -1,8 +1,8 @@
-package my.compary.restaurant;
+package com.otaviojava.workshop.microstream.helidon.restaurant;
 
-import my.compary.restaurant.infra.AbstractFacade;
+import com.otaviojava.workshop.microstream.helidon.restaurant.infra.AbstractFacade;
 
-import javax.ejb.Stateless;
+import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.logging.Logger;
 
-@Stateless
+@ApplicationScoped
 public class RestaurantRepositoryJPA extends AbstractFacade<Item> implements RestaurantRepository {
 
     private static final Logger LOGGER = Logger.getLogger(RestaurantRepositoryJPA.class.getName());

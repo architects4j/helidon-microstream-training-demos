@@ -1,7 +1,7 @@
-package my.compary.restaurant.infra;
+package com.otaviojava.workshop.microstream.helidon.restaurant.infra;
 
-import java.util.List;
 import javax.persistence.EntityManager;
+import java.util.List;
 
 public abstract class AbstractFacade<T> {
 
