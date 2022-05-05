@@ -1,7 +1,7 @@
 package com.otaviojava.workshop.microstream.helidon.restaurant;
 
 
-import my.compary.restaurant.infra.FieldPropertyVisibilityStrategy;
+import com.otaviojava.workshop.microstream.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
 
 import javax.json.bind.annotation.JsonbVisibility;
 import javax.validation.constraints.Future;
