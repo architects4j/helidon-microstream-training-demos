@@ -11,6 +11,7 @@
     <module>cdi</module>
     <module>restaurant</module>
     <module>restaurant-open-api</module>
+    <module>nosql</module>
     <module>config</module>
   </modules>
 </project>
