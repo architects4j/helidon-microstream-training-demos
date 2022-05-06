@@ -9,13 +9,13 @@ import java.util.Optional;
 import java.util.logging.Logger;
 
 @ApplicationScoped
-class RestaurantRepositoryMemory implements RestaurantRepository {
+class RestaurantRepositoryMicrostream implements RestaurantRepository {
 
-    private static final Logger LOGGER = Logger.getLogger(RestaurantRepositoryMemory.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(RestaurantRepositoryMicrostream.class.getName());
 
     private Map<String, Item> data;
 
-    public RestaurantRepositoryMemory() {
+    public RestaurantRepositoryMicrostream() {
         this.data = new HashMap<>();
     }
 
