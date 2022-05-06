@@ -13,5 +13,6 @@
     <module>restaurant-open-api</module>
     <module>nosql</module>
     <module>config</module>
+    <module>microstream</module>
   </modules>
 </project>
