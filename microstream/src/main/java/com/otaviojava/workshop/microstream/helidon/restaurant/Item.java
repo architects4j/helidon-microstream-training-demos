@@ -4,6 +4,8 @@ package com.otaviojava.workshop.microstream.helidon.restaurant;
 import com.otaviojava.workshop.microstream.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
+import javax.json.bind.annotation.JsonbCreator;
+import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbVisibility;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
@@ -22,35 +24,45 @@ public class Item {
     @Schema(required = true, name = "name", description = "The item name", example = "water")
     @NotBlank
     @Size(min = 3, max = 20, message = "The name size should be between 3 and 10 chars")
-    private String name;
+    private final String name;
 
     @Schema(required = true, name = "description", description = "The item description", example = "Water appears as a clear, nontoxic liquid composed of hydrogen and oxygen, essential for life.")
     @NotBlank
     @Size(min = 10, max = 100, message = "The description should be between 10 and 100 chars")
-    private String description;
+    private final String description;
 
     @Schema(required = true, name = "type", description = "The type name", example = "BEVERAGE")
     @NotNull(message = "Fill up it with either BEVERAGE or FOOD")
-    private ItemType type;
+    private final ItemType type;
 
     @Schema(required = true, name = "expires", description = "When the item expires", example = "2025-12-03")
     @Future(message = "It is not possible to save an expired item")
     @NotNull
-    private LocalDate expires;
+    private final LocalDate expires;
 
     @NotNull
     @Size(min = 1, message = "There should be at least one ingredient")
     @Schema(required = true, name = "ingredients", description = "The ingredients")
-    private List<Ingredient> ingredients;
+    private final List<Ingredient> ingredients;
 
+    @JsonbCreator
+    public Item(@JsonbProperty("name") String name,
+                @JsonbProperty("description") String description,
+                @JsonbProperty("type") ItemType type,
+                @JsonbProperty("expires") LocalDate expires,
+                @JsonbProperty("ingredients") List<Ingredient> ingredients) {
+        this.name = name;
+        this.description = description;
+        this.type = type;
+        this.expires = expires;
+        this.ingredients = ingredients;
+    }
 
-    public void update(Item item, RestaurantRepository repository) {
-        this.description = item.description;
-        this.expires = item.expires;
-        this.type = item.type;
-        this.name = item.name;
-        this.ingredients = item.ingredients;
-        repository.save(item);
+    public Item update(Item item, RestaurantRepository repository) {
+        Item newItem = new Item(item.name, item.description,
+                item.type, this.expires, item.ingredients);
+        repository.save(newItem);
+        return newItem;
     }
 
     public String getName() {
@@ -70,7 +82,7 @@ public class Item {
     }
 
     public List<Ingredient> getIngredients() {
-        if(Objects.isNull(this.ingredients)) {
+        if (Objects.isNull(this.ingredients)) {
             return Collections.emptyList();
         }
         return this.ingredients;

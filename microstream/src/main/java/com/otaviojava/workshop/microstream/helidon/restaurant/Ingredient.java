@@ -3,13 +3,14 @@ package com.otaviojava.workshop.microstream.helidon.restaurant;
 import com.otaviojava.workshop.microstream.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
+import javax.json.bind.annotation.JsonbCreator;
+import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbVisibility;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.PositiveOrZero;
 import javax.validation.constraints.Size;
 
 @Schema(name = "Ingredient", description = "The ingredient of an item")
-@JsonbVisibility(FieldPropertyVisibilityStrategy.class)
 public class Ingredient {
 
     @Schema(required = true, name = "name", description = "The ingredient name", example = "water")
@@ -24,6 +25,19 @@ public class Ingredient {
     @Schema(required = true, name = "quantity", description = "The ingredient quantity", example = "1")
     @PositiveOrZero(message = "a quantity cannot be negative")
     private double quantity;
+
+    @JsonbCreator
+    public Ingredient( @JsonbProperty("name") String name,
+                @JsonbProperty("unit")String unit,
+                @JsonbProperty("quantity") double quantity) {
+        this.name = name;
+        this.unit = unit;
+        this.quantity = quantity;
+    }
+
+    @Deprecated
+    public Ingredient() {
+    }
 
     public String getName() {
         return name;
