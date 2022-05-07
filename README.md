@@ -62,7 +62,6 @@ By the end of the course, you should be able to meet the following objectives:
   * Control user and role access by using MicroProfile JSON Web Tokens (JWT)
   * Validate user input by using bean validation
 * Persistence
-  * Persist data to a database by using Java Persistence API (JPA)
   * Caching HTTP session data by using JCache and MicroStream
   * Persist data by using MicroStream native object graph persistence
 * Testing microservices
