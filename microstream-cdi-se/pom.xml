@@ -6,14 +6,10 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>one.microstream</groupId>
-		<artifactId>microstream-examples-parent</artifactId>
-		<version>08.00.00-MS-GA-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
-	</parent>
 
-	<artifactId>microstream-examples-cdi-javase</artifactId>
+	<groupId>com.otaviojava.workshop.microstream.helidon</groupId>
+    <artifactId>microstream-cdi-se</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
