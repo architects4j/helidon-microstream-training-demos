@@ -13,6 +13,6 @@
     <module>restaurant-open-api</module>
     <module>nosql</module>
     <module>config</module>
-    <module>microstream</module>
+    <module>microstream-helidon</module>
   </modules>
 </project>
