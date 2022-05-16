@@ -1,5 +1,5 @@
 
-package one.microstream.examples.cdi.javase;
+package com.otaviojava.workshop.microstream.helidon;
 
 /*-
  * #%L
