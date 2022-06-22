@@ -70,7 +70,8 @@ public class RestaurantController {
             schema = @Schema(type = SchemaType.STRING))
                          @PathParam("id") String id) {
         return this.repository.findById(id).orElseThrow(
-                () -> new WebApplicationException("There is no item with the id " + id, Response.Status.NOT_FOUND));
+                () -> new WebApplicationException("There is no item with the id "
+                        + id, Response.Status.NOT_FOUND));
     }
 
     @POST

@@ -27,7 +27,7 @@ public class Restaurant {
     }
 
     Optional<Item> findById(String id){
-        return this.items.stream().filter(this.isIdEquals(id)).limit(1).findFirst();
+        return this.items.stream().filter(this.isIdEquals(id)).findFirst();
     }
 
     void deleteById(String id){
@@ -35,6 +35,6 @@ public class Restaurant {
     }
 
     private Predicate<Item> isIdEquals(final String id) {
-        return p -> p.getName() == id;
+        return p -> p.getName().equals(id);
     }
 }
