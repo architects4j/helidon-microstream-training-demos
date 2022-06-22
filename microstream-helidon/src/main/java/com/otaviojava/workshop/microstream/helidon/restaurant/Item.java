@@ -58,7 +58,7 @@ public class Item {
         this.ingredients = ingredients;
     }
 
-    public Item update(Item item, RestaurantRepository repository) {
+    public Item update(Item item, Restaurant repository) {
         Item newItem = new Item(item.name, item.description,
                 item.type, this.expires, item.ingredients);
         repository.save(newItem);

@@ -27,7 +27,7 @@ import java.util.Collection;
 @Path("restaurants")
 public class RestaurantController {
 
-    private RestaurantRepository repository;
+    private Restaurant repository;
 
     /**
      * @Deprecated CDI only
@@ -36,7 +36,7 @@ public class RestaurantController {
     }
 
     @Inject
-    RestaurantController(RestaurantRepository repository) {
+    RestaurantController(Restaurant repository) {
         this.repository = repository;
     }
 
