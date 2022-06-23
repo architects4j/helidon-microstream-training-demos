@@ -20,7 +20,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <final.name>restaurant</final.name>
         <helidonVersion>2.5.1</helidonVersion>
-        <jakarta.nosql.version>1.0.0-b3</jakarta.nosql.version>
+        <jakarta.nosql.version>1.0.0-b4</jakarta.nosql.version>
     </properties>
     <dependencies>
         <dependency>
