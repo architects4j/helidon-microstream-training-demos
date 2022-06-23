@@ -35,6 +35,10 @@
         <artifactId>jersey-bean-validation</artifactId>
       </dependency>
         <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.eclipse.jnosql.mapping</groupId>
             <artifactId>mapping-document</artifactId>
             <version>${jakarta.nosql.version}</version>
@@ -63,6 +67,19 @@
                                 <id>copy-libs</id>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <classpathLayoutType>custom</classpathLayoutType>
+                                    <customClasspathLayout>
+                                        $${artifact.groupId}.$${artifact.artifactId}-$${artifact.version}.$${artifact.extension}
+                                    </customClasspathLayout>
+                                </manifest>
+                            </archive>
+                        </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.jboss.jandex</groupId>
