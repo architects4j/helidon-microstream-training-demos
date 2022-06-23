@@ -1,7 +1,7 @@
-package com.otaviojava.workshop.microstream.helidon.restaurant;
+package com.architects4j.workshop.microstream.helidon.restaurant;
 
 
-import com.otaviojava.workshop.microstream.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
+import com.architects4j.workshop.microstream.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
 import jakarta.nosql.mapping.Column;
 import jakarta.nosql.mapping.Entity;
 import jakarta.nosql.mapping.Id;

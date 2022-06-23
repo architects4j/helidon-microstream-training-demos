@@ -1,4 +1,4 @@
-package com.otaviojava.workshop.microstream.helidon.restaurant.infra;
+package com.architects4j.workshop.microstream.helidon.restaurant.infra;
 
 import javax.json.bind.config.PropertyVisibilityStrategy;
 import java.lang.reflect.Field;
