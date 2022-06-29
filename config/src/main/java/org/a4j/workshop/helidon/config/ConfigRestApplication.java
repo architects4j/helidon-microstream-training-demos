@@ -1,11 +1,8 @@
-package com.otaviojava.workshop.microstream.helidon.config;
+package org.a4j.workshop.helidon.config;
 
 
 
-import com.otaviojava.workshop.microstream.helidon.config.config.ConfigTestController;
-
-
-
+import org.a4j.workshop.helidon.config.config.ConfigTestController;
 
 
 import javax.enterprise.context.ApplicationScoped;

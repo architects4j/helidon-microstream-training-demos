@@ -1,4 +1,4 @@
-package com.otaviojava.workshop.microstream.helidon.config;
+package org.a4j.workshop.helidon.config;
 
 import javax.inject.Singleton;
 import javax.ws.rs.GET;

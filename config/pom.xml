@@ -14,7 +14,7 @@
   <properties>
     <mpVersion>3.3</mpVersion>
     <maven.compiler.target>11</maven.compiler.target>
-    <package>com.otaviojava.workshop.microstream.helidon.config</package>
+    <package>org.a4j.workshop.helidon.config</package>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.source>11</maven.compiler.source>
     <final.name>config</final.name>

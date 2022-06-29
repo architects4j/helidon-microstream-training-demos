@@ -1,4 +1,4 @@
-package com.otaviojava.workshop.microstream.helidon.config.config;
+package org.a4j.workshop.helidon.config.config;
 
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
