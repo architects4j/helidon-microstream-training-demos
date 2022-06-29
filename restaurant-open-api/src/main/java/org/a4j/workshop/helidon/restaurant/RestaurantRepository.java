@@ -1,4 +1,4 @@
-package com.otaviojava.workshop.microstream.helidon.restaurant;
+package org.a4j.workshop.helidon.restaurant;
 
 import java.util.Collection;
 import java.util.Optional;
