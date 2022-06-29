@@ -15,5 +15,6 @@
     <module>config</module>
     <module>microstream-helidon</module>
     <module>rest-client</module>
+    <module>fault-tolerance</module>
   </modules>
 </project>
