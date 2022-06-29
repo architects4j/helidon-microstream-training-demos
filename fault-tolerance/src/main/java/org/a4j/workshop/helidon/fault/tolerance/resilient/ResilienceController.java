@@ -54,5 +54,5 @@ public class ResilienceController {
     public Person serviceA() {
         throw new RuntimeException("");
     }
-
+// https://www.eclipse.org/community/eclipse_newsletter/2017/september/article4.php
 }
