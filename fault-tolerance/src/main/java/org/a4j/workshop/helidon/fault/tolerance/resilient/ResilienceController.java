@@ -1,5 +1,6 @@
 package org.a4j.workshop.helidon.fault.tolerance.resilient;
 
+import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
 import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.Timeout;
 
@@ -38,4 +39,20 @@ public class ResilienceController {
     public String fallback() {
         return "Fallback answer due to timeout";
     }
+
+
+    @CircuitBreaker(successThreshold = 10, requestVolumeThreshold = 4, failureRatio=0.75,delay = 1000)
+    /**
+     * The above code-snippet means the method serviceA applies the CircuitBreaker policy,
+     * which is to open the circuit once 3 (4x0.75) failures occur among the rolling window of 4 consecutive
+     * invocations. The circuit will stay open for 1000ms and then back to half open.
+     * After 10 consecutive successful invocations, the circuit will be back to close again.
+     * When a circuit is open, A CircuitBreakerOpenException will be thrown.
+     */
+    @GET
+    @Path("circuit")
+    public Person serviceA() {
+        throw new RuntimeException("");
+    }
+
 }
