@@ -1,4 +1,4 @@
-package com.otaviojava.workshop.microstream.helidon.restaurant.infra;
+package org.a4j.workshop.helidon.restaurant.infra;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;

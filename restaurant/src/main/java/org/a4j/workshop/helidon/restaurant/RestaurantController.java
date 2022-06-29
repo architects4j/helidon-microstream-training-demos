@@ -1,4 +1,4 @@
-package com.otaviojava.workshop.microstream.helidon.restaurant;
+package org.a4j.workshop.helidon.restaurant;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;

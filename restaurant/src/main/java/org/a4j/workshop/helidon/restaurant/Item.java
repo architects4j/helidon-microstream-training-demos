@@ -1,7 +1,7 @@
-package com.otaviojava.workshop.microstream.helidon.restaurant;
+package org.a4j.workshop.helidon.restaurant;
 
 
-import com.otaviojava.workshop.microstream.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
+import org.a4j.workshop.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
 
 import javax.json.bind.annotation.JsonbVisibility;
 import javax.validation.constraints.Future;
