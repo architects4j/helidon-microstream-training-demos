@@ -1,4 +1,4 @@
-package org.a4j.workshop.microstream.helidon.fault.tolerance;
+package org.a4j.workshop.helidon.fault.tolerance;
 
 import javax.inject.Singleton;
 import javax.ws.rs.GET;

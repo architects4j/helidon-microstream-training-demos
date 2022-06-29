@@ -1,11 +1,9 @@
-package org.a4j.workshop.microstream.helidon.fault.tolerance;
+package org.a4j.workshop.helidon.fault.tolerance;
 
 
 
 
-import org.a4j.workshop.microstream.helidon.fault.tolerance.resilient.ResilienceController;
-
-
+import org.a4j.workshop.helidon.fault.tolerance.resilient.ResilienceController;
 
 
 import javax.enterprise.context.ApplicationScoped;

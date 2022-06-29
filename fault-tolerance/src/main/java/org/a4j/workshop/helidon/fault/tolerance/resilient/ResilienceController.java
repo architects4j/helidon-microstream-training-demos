@@ -1,4 +1,4 @@
-package org.a4j.workshop.microstream.helidon.fault.tolerance.resilient;
+package org.a4j.workshop.helidon.fault.tolerance.resilient;
 
 import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.Timeout;
