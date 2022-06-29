@@ -15,25 +15,18 @@ import java.util.Set;
 /**
  *
  */
-@ApplicationPath("/data")
+@ApplicationPath("/")
 @ApplicationScoped
-public class FaulttoleranceRestApplication extends Application {
+public class FaultToleranceRestApplication extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
-
         Set<Class<?>> classes = new HashSet<>();
-
         // resources
         classes.add(HelloController.class);
         
-        
-        
         classes.add(ResilienceController.class);
-        
-        
-        
-        
+
         return classes;
     }
 }
