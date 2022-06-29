@@ -23,6 +23,18 @@ public class ResilienceController {
         return "Never from normal processing";
     }
 
+    @Fallback(CustomFallbackHandler.class) // better use FallbackHandler
+    @Timeout(500)
+    @GET
+    @Path("custom")
+    public String handler() {
+        try {
+            Thread.sleep(700L);
+        } catch (InterruptedException e) {
+            //
+        }
+        return "Never from normal processing";
+    }
     public String fallback() {
         return "Fallback answer due to timeout";
     }
