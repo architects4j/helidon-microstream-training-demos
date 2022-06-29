@@ -7,7 +7,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 
-	<groupId>com.otaviojava.workshop.microstream.helidon</groupId>
+	<groupId>org.a4j.workshop.helidon</groupId>
     <artifactId>microstream-cdi-se</artifactId>
     <version>1.0-SNAPSHOT</version>
 

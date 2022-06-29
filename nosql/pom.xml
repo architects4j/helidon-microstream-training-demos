@@ -9,7 +9,7 @@
         <version>2.5.1</version>
         <relativePath></relativePath>
     </parent>
-    <groupId>com.architects4j.workshop.microstream.helidon</groupId>
+    <groupId>org.a4j.workshop.helidon</groupId>
     <artifactId>nosql</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
