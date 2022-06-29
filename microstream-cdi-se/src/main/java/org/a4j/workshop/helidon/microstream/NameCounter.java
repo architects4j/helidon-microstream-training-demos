@@ -1,7 +1,5 @@
 
-package com.otaviojava.workshop.microstream.helidon;
-
-import java.util.Set;
+package org.a4j.workshop.helidon.microstream;
 
 /*-
  * #%L
@@ -23,24 +21,41 @@ import java.util.Set;
  * #L%
  */
 
+import static java.util.Optional.ofNullable;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.cache.Cache;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 import one.microstream.integrations.cdi.types.Store;
+import one.microstream.integrations.cdi.types.cache.StorageCache;
 
 
 @ApplicationScoped
-public class NamesService {
+public class NameCounter {
     @Inject
-    private Names names;
+    @StorageCache
+    private Cache<String, Integer> counter;
 
     @Store
-    public void add(final String name) {
-        this.names.add(name);
+    public synchronized int count(final String name) {
+        int counter = this.show(name);
+        counter++;
+        this.counter.put(name, counter);
+        return counter;
     }
 
-    public Set<String> getNames() {
-        return this.names.get();
+    public int show(final String name) {
+        return ofNullable(this.counter.get(name)).orElse(0);
     }
 
+    public Map<String, Integer> getNames() {
+
+        final Map<String, Integer> map = new HashMap<>();
+        this.counter.forEach(c -> map.put(c.getKey(), c.getValue()));
+        return map;
+    }
 }

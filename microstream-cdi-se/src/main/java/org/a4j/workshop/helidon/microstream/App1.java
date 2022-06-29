@@ -1,5 +1,5 @@
 
-package com.otaviojava.workshop.microstream.helidon;
+package org.a4j.workshop.helidon.microstream;
 
 /*-
  * #%L
