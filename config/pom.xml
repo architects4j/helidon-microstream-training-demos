@@ -18,7 +18,7 @@
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.source>11</maven.compiler.source>
     <final.name>config</final.name>
-    <helidonVersion>2.4.1</helidonVersion>
+    <helidonVersion>2.5.1</helidonVersion>
   </properties>
   <dependencies>
     <dependency>
