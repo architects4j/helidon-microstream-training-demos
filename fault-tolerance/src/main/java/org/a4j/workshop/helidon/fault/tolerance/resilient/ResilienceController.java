@@ -23,7 +23,7 @@ public class ResilienceController {
         return "Never from normal processing";
     }
 
-    @Fallback(CustomFallbackHandler.class) // better use FallbackHandler
+    @Fallback(CustomFallbackHandler.class)
     @Timeout(500)
     @GET
     @Path("custom")
