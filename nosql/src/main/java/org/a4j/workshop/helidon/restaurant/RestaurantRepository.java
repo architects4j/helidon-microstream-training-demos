@@ -1,4 +1,4 @@
-package com.architects4j.workshop.microstream.helidon.restaurant;
+package org.a4j.workshop.helidon.restaurant;
 
 import jakarta.nosql.mapping.Repository;
 

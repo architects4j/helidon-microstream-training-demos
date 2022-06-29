@@ -1,4 +1,4 @@
-package com.architects4j.workshop.microstream.helidon.restaurant.infra;
+package org.a4j.workshop.helidon.restaurant.infra;
 
 import jakarta.nosql.document.DocumentCollectionManager;
 import org.eclipse.microprofile.config.inject.ConfigProperty;

@@ -1,6 +1,6 @@
-package com.architects4j.workshop.microstream.helidon.restaurant;
+package org.a4j.workshop.helidon.restaurant;
 
-import com.architects4j.workshop.microstream.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
+import org.a4j.workshop.helidon.restaurant.infra.FieldPropertyVisibilityStrategy;
 import jakarta.nosql.mapping.Column;
 import jakarta.nosql.mapping.Entity;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
